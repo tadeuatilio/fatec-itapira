@@ -30,4 +30,4 @@ Os seguintes requisitos estão previstos para a primeira parte da avaliação:
   
   * Descrição do filme
   
-  * Botão de lei mais
+  * Botão de Leia mais
