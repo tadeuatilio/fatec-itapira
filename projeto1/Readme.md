@@ -1,6 +1,6 @@
 # Projeto 1
 
-## Descrição do projeto
+## Descrição do projeto :ghost:
 
 O projeto consiste na elaboração de uma página HTML/CSS que atenda os requisitos do mockup apresentado a seguir:
 
@@ -40,3 +40,23 @@ Refatoração da página com significancia semântica, atendendo as recomendaç�
 ### Requisitos para Avaliação 3 (40% da avaliação)
 
 Refatoração da página para atender requisitos de responsividade, como é convencianado para diversos dispositivos.
+
+## Guia de estudo :ghost:
+
+Esses links são excelentes materiais, tanto para estudar para a avaliação escrita quanto para desenvolver o projeto!
+
+https://www.w3schools.com/html/default.asp
+
+https://www.w3schools.com/css/default.asp
+
+https://pt.khanacademy.org/computing/computer-programming/html-css
+
+https://www.caelum.com.br/apostila-html-css-javascript/
+
+https://www.codecademy.com/catalog/language/html-css
+
+## Data da Entrega :ghost:
+
+A definir...
+
+
