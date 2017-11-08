@@ -57,6 +57,6 @@ https://www.codecademy.com/catalog/language/html-css
 
 ## Data da Entrega :ghost:
 
-A definir...
+22/11/2017
 
 
