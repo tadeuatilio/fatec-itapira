@@ -55,8 +55,14 @@ https://www.caelum.com.br/apostila-html-css-javascript/
 
 https://www.codecademy.com/catalog/language/html-css
 
-## Data da Entrega :ghost:
+## Entrega :ghost:
 
-22/11/2017
+Data: 22/11/2017
+
+### Realização da entrega
+
+O projeto deverá estar em um repositório público do github. O link do repositório deverá ser postado em uma nova Issue deste repositório, com o nome do aluno como título!
+
+Até a data da entrega, o professor poderá fazer comentários e sugestões de melhoria para nota. Sugestões seguintes à data da entrega não contarão como nota!
 
 
