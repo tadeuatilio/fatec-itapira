@@ -56,9 +56,19 @@ https://www.caelum.com.br/apostila-html-css-javascript/
 
 https://firebase.google.com/docs/web/setup
 
-### PHP com PDO
+### PHP
+
+#### Uso de PDO
 
 https://gist.github.com/bmarchete/d313098918693594ff7f4071309bf80e
+
+#### Arrays em PHP
+
+https://gist.github.com/bmarchete/f2df6df70ac98ebd26f22e8028749ac2
+
+#### Vídeos sobre PHP
+
+https://www.youtube.com/watch?v=9HEcscFY_oI&list=PLw9oYsqdATnOg9FF1wuBHle0FTKyohGB7
 
 ## Entrega
 
