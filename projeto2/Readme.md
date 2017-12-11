@@ -1,10 +1,6 @@
 # Projeto 2
 
-## Descrição do projeto
-
-O projeto consiste na elaboração de um sistema web que atenda os requisitos apresentados a seguir:
-
-// a fazer
+O projeto consiste na elaboração de um sistema web que atenda os requisitos apresentados a seguir. Os mockups servem de guia para o projeto:
 
 ### Requisitos para Avaliação (50% da avaliação)
 
@@ -34,6 +30,20 @@ Os seguintes requisitos estão previstos para a primeira parte da avaliação:
 
 * Página de contato com um formulário a ser preenchido pelo usuário do site. Não é necessário estar funcionando o formulário. O layout final conta como nota
 
+### Mockups
+
+Página de consulta de filmes
+
+![Página de consulta de filmes](./T1.png)
+
+Página de cadastro de filmes
+
+![Página de cadastro de filmes](./T2.png)
+
+Página de detalhe de filme
+
+![Página de detalhe de filme](./T3.png)
+
 ## Guia de estudo
 
 Esses links são excelentes materiais, tanto para estudar para a avaliação escrita quanto para desenvolver o projeto!
@@ -48,7 +58,7 @@ https://firebase.google.com/docs/web/setup
 
 ## Entrega
 
-Data: 19/12/2017
+Data: 20/12/2017
 
 ### Realização da entrega
 
