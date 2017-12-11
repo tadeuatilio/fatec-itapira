@@ -56,6 +56,10 @@ https://www.caelum.com.br/apostila-html-css-javascript/
 
 https://firebase.google.com/docs/web/setup
 
+### PHP com PDO
+
+https://gist.github.com/bmarchete/d313098918693594ff7f4071309bf80e
+
 ## Entrega
 
 Data: 20/12/2017
