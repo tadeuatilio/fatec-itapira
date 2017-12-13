@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Idade</th>
+
+            </tr>
+        </thead>
+
+        <tbody id="dados">
+
+
+        </tbody>
+
+        <script>
+
+            let dados = document.querySelector('#dados');
+
+            axios.post(`consulta.php`)
+                .then(function (response) {
+                    console.log(response);
+
+                    dados.innerHTML = '';
+
+                    let retorno = response.data;
+
+                    retorno.forEach(element => {
+                    //console.log(dados);
+                        
+                         let linha = document.createElement('tr');
+                         let c1 = document.createElement('td');
+                         let c2 = document.createElement('td');
+                         let c3 = document.createElement('td');
+                         
+                         c1.innerText = element.id;
+                         c2.innerText = element.nome;
+                         c3.innerText = element.idade;
+
+                         linha.appendChild(c1);
+                         linha.appendChild(c2);
+                         linha.appendChild(c3);
+                        
+                        dados.appendChild(linha);
+
+                    });
+                    
+
+                })
+                .catch(function (error) {
+                    console.log(error);
+                    
+
+                });
+
+
+        </script>
+    </table>
+</body>
+
+</html>

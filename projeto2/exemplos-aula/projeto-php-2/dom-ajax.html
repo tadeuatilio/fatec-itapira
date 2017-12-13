@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <h1>Busque sua musica em nosso sistema</h1>
+    <hr>
+
+    <p>
+        <label for="artista">Digite o artista</label>
+        <input type="text" id="artista">
+
+    </p>
+
+    <p>
+        <label for="musica">Digite a musica</label>
+        <input type="text" id="musica">
+    </p>
+
+    <p>
+        <button id="buscar">Buscar</button>
+
+    </p>
+
+
+
+    <div id="pendura"></div>
+
+    <script>
+
+        let div = document.querySelector('#pendura');
+        let artista = document.querySelector('#artista');
+        let musica = document.querySelector('#musica');
+        let buscar = document.querySelector('#buscar');
+        
+        buscar.addEventListener('click', funcBusca);
+
+        function funcBusca(){
+
+            axios.get(`https://api.lyrics.ovh/v1/${artista.value}/${musica.value}`)
+            .then(function (response) {
+                console.log(response);
+
+                div.innerHTML = '';
+
+                let p = document.createElement('p');
+                p.innerText = response.data.lyrics;
+
+                div.appendChild(p);
+
+            })
+            .catch(function (error) {
+                console.log(error);
+                div.innerHTML = '';
+
+                let p = document.createElement('p');
+                p.innerText = 'Erro ao buscar musica';
+
+                div.appendChild(p);
+
+            });
+        }
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Cadastra aluno</h1>
+
+
+    <p>Nome</p>
+    <p>
+        <input type="text" id="nome">
+
+    </p>
+    <p>Idade</p>
+    <p>
+
+        <input type="text" id="idade">
+    </p>
+
+
+
+    <button id="enviar">Enviar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+
+        let div = document.querySelector('#resultado');
+        let nome = document.querySelector('#nome');
+        let idade = document.querySelector('#idade');
+        let enviar = document.querySelector('#enviar');
+
+        enviar.addEventListener('click', funcEnvia);
+
+        function funcEnvia() {
+
+            axios.post(`recebe.php?nome=${nome.value}&idade=${idade.value}`)
+                .then(function (response) {
+                    console.log(response);
+
+                     div.innerHTML = '';
+
+                     let p = document.createElement('p');
+                     p.innerText = 'Cadastro realizado';
+
+                     div.appendChild(p);
+
+                })
+                .catch(function (error) {
+                    console.log(error);
+                    div.innerHTML = '';
+
+                    let p = document.createElement('p');
+                    p.innerText = 'Erro ao cadastrar';
+
+                    div.appendChild(p);
+
+                });
+        }
+
+    </script>
+</body>
+
+</html>
